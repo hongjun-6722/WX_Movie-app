@@ -1,0 +1,35 @@
+.comment{
+  display: flex;
+  height: 300rpx;
+  margin-bottom: 20px;
+}
+.comment-bg{
+  filter: blur(40rpx);
+  height: 300rpx;
+  width: 100%;
+  opacity: .4;
+  position: absolute;
+}
+.comment-cover{
+  width: 280rpx;
+  height: 100%;
+  margin: 10px;
+}
+.comment-title{
+  font-size:large;
+  margin: 15rpx;
+  
+}
+.comment-text{
+  font-size: medium;
+  margin: 10rpx;
+}
+.comment-info{
+  flex:1;
+}
+.comment-average{
+  color:#FF9900;
+}
+.comment-summary{
+  margin: 10px;
+}

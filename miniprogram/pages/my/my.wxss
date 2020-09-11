@@ -1,0 +1,29 @@
+/* page/my/my.wxss */
+.my_red{
+  height: 400rpx;
+  width: 100%;
+  background-color:#cc3333;
+}
+.my_icon{
+  border-radius:50%;
+  overflow:hidden;
+  width: 180rpx;
+  height: 180rpx;
+  margin-left: 38%;
+  margin-top: 10%;
+}
+.my_login{
+  margin-top: 180rpx;
+  background-color: white;
+}
+.my_text{
+  text-align: center;
+  color: white;
+}
+.my_id{
+  margin-left: 20rpx;
+  color: gray;
+}
+.black{
+  color: black;
+}

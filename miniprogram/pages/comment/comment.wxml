@@ -1,0 +1,34 @@
+<view class="icon van-icon van-icon van-icon-upgrade van-icon-upgrade" style="font-size: 32rpx;"></view>
+<view class="comment">
+  <view class="comment-bg" style="background:url({{detail.images.large}}) no-repeat top/cover"></view>
+  <image src="{{detail.images.large}}" class="comment-cover"></image>
+  <view class="comment-info">
+    <view class="comment-title">{{detail.title}}</view>
+    <view class="comment-text comment-average">{{detail.rating.average}}</view>
+    <view class="comment-text">{{detail.original_title}}</view>
+    <view class="comment-text">{{detail.writers[0].name}}</view>
+    <view class="comment-text">{{detail.countries[0]}}</view>
+  </view>
+</view>
+<view class="comment-summary">
+  {{detail.summary}}
+</view>
+<view>
+  <van-cell-group>
+    <van-field
+      value="{{ content }}"
+      placeholder="写一些评价吧"
+      bind:change="onContentChange"
+    />
+  </van-cell-group>
+  <van-rate value="{{ score }}" bind:change="onScoreChange" />
+</view>
+<view>
+  <van-button  type="warning" bindtap="upLoadImg">上传图片</van-button>
+  <view>
+    <image src="{{item}}" wx:for="{{images}}" wx:key="index"></image>
+  </view>
+  <van-button size="large" type="danger" bindtap="submit">提交评价</van-button>
+</view>
+
+
