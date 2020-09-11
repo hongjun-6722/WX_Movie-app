@@ -24,3 +24,11 @@
     │  └─my
     └─style
 预览图片
+##### 电影列表
+![pages_movie](/img/pages_movie.png )
+
+##### 详情页
+![pages_comment](/img/pages_comment.png )
+
+##### 我的
+![pages_my](/img/pages_my.png  )
