@@ -1,12 +1,26 @@
-# 云开发 quickstart
-
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
-
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
-
-## 参考文档
-
-- [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
-
+项目结构
+├─cloudfunctions 云函数
+│  ├─getDetail  电影详情页
+│  ├─login  获取wx授权
+│  ├─movielist  电影列表
+│  ├─openapi    获取openId
+└─miniprogram   项目资源
+    │  app.js   
+    │  app.json
+    │  app.wxss
+    │  package-lock.json
+    │  package.json
+    │  sitemap.json
+    ├─components
+    │  └─chatroom
+    ├─images
+    ├─miniprogram_npm
+    │  └─@vant
+    ├─node_modules
+    │  └─@vant
+    ├─pages
+    │  ├─comment
+    │  ├─movie
+    │  └─my
+    └─style
+预览图片
