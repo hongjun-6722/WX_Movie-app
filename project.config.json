@@ -25,7 +25,7 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": true,
+		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"appid": "wx5ae436e6593cd695",
@@ -78,10 +78,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 3,
 					"name": "pages/comment/comment",
 					"pathName": "pages/comment/comment",
-					"query": "movieid=20495023",
+					"query": "movieid=313",
 					"scene": null
 				}
 			]

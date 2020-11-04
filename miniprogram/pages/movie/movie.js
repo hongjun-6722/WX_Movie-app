@@ -5,8 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-    movielist:[]
+    movielist:[],     //电影列表
+    _errImg:"../../images/zanwutupian.png",     //错误图片
   },
+
+  //图片出错处理
+  errImg: function(e) {
+    var index = e.currentTarget.dataset.index;
+    console.log(index)
+    var reimg=this.data.movielist;
+    reimg[index].images.large= this.data._errImg;
+    this.setData({
+      movielist:reimg,
+    })
+  },
+
+  //电影列表加载
   getMovieList:function(){
     wx.showLoading({
       title: '加载中',
@@ -29,13 +43,14 @@ Page({
       wx.hideLoading();
     })
   },
+
+  //导航至详情页
   gotoComment:function(event){
     wx.navigateTo({
       url: `../comment/comment?movieid=${event.target.dataset.movieid}`,
     })
-    
-
   },
+  
   /**
    * 生命周期函数--监听页面加载
    */

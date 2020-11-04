@@ -1,5 +1,5 @@
-<view class="movie" wx:for="{{movielist}}" wx:key="{{index}}">
-  <image class="movie-img" src="{{item.images.large}}"></image>
+<view class="movie" wx:for="{{movielist}}" wx:key="index">
+  <image class="movie-img" src="{{item.images.large}}" binderror="errImg" data-index="{{index}}"></image>
   <view class="movie-info">
     <view class="movie-title">{{item.title}}</view>
     <view>

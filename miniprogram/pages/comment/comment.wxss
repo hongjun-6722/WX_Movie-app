@@ -2,6 +2,7 @@
   display: flex;
   height: 300rpx;
   margin-bottom: 20px;
+  background-color: gray;
 }
 .comment-bg{
   filter: blur(40rpx);
@@ -32,4 +33,40 @@
 }
 .comment-summary{
   margin: 10px;
+}
+.comment_img{
+  width: 80px;
+  height: 80px;
+  padding-left: 15%;
+}
+.comment_area_title{
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  background-color: white;
+}
+.comment_area{
+  padding-left: 10px;
+  padding-top: 10px;
+  background-color: white;
+  margin-top: 5px;
+}
+.comment_userimg{
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+.comment_user_score{
+  float: right;
+  margin-top: 15rpx;
+  /* padding-top: 10rpx; */
+}
+.comment_user_name{
+  float: left;
+  padding-top: 15rpx;
+}
+.comment_user_Content{
+  margin-top: 45px;
+  width: 80%;
+  padding-left: 15%;
 }

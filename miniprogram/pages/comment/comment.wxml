@@ -10,15 +10,17 @@
     <view class="comment-text">{{detail.countries[0]}}</view>
   </view>
 </view>
-<view class="comment-summary">
-  {{detail.summary}}
-</view>
+<text class="comment-summary" decode="true">
+  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;{{comment_summary}}
+</text> 
 <view>
   <van-cell-group>
     <van-field
       value="{{ content }}"
       placeholder="写一些评价吧"
       bind:change="onContentChange"
+      type="textarea"
+       autosize
     />
   </van-cell-group>
   <van-rate value="{{ score }}" bind:change="onScoreChange" />
@@ -29,6 +31,24 @@
     <image src="{{item}}" wx:for="{{images}}" wx:key="index"></image>
   </view>
   <van-button size="large" type="danger" bindtap="submit">提交评价</van-button>
+</view>
+<view>
+  <view class="comment_area_title">观众评论</view>
+  <view class="comment_area" wx:for="{{comment_user.data}}" wx:key="{{index}}">
+    <!-- <view>用户ID：{{item._openid}}</view> -->
+    <image src="{{item.id_avatarUrl}}" class="comment_userimg"></image>
+    <view class="comment_user_name">{{item.id_nickName}}</view>
+    <view class="comment_user_score">
+      <van-rate value="{{item.score}}" readonly/>
+    </view>
+    <view class="comment_user_Content">{{item.Content}}</view>
+    <view wx:for="{{item.fileIds}}" wx:key="{{index}}">
+      <image class="comment_img" src="{{item}}" mode="aspectFit"></image>
+    </view>
+    <!-- <view>
+      <van-icon name="like-o" />
+    </view> -->
+  </view>
 </view>
 
 

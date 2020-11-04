@@ -13,7 +13,11 @@
 </view>
 <view>
   <view class="my_id">
-    <view class="black">当前用户openid: </view>
+    <view class="black">当前用户openid: 
       {{id}}
     </view>
+    <view>
+    <button open-type="getUserInfo" size="default">获取授权</button>
+    </view>
+  </view>
 </view>
